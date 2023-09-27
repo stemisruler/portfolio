@@ -1,0 +1,156 @@
+.wrap.aboutWrap{
+    height: 90vh;
+    background-color: #d9d9d944;
+}
+
+.aboutWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutImgSection{
+    width: 50%;
+    text-align: center;
+}
+
+.aboutMeSection{
+    width: 50%;
+    text-align: left;
+    margin-right: 5rem;
+}
+
+.aboutMeSection h2{
+    font-size: 44px;
+    font-family: 'Pretendard-ExtraBold';
+    font-weight: 900;
+    margin-bottom: 0.3rem;
+}
+.aboutMeSection span{
+    display: block;
+    margin-bottom: 2rem;
+    font-family: 'Pretendard-ExtraLight';
+    font-weight: 200;
+}
+.aboutMeSection p{
+    text-indent: 1rem;
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.aboutMeSection h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.aboutMeSection .usingNowImg{
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 1rem;
+    gap: 5px;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .aboutContactButton{
+    width: 179px;
+    height: 56px;
+    border: 1px solid #a5a5a5;
+    background-color: transparent;
+    border-radius: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .aboutContactButton:active{
+    background-color: #ebebeb;
+  }
+
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modalContent {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .modalContent h3{
+    font-size: 24px;
+    font-weight: bold;
+
+  }
+  .modalButton{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+
+  .modalButton:active{
+    background-color: #ebebeb;
+
+  }
+
+  @media (max-width: 1300px) {
+    .wrap.aboutWrap{
+      height: fit-content;
+    }
+    .aboutWrap{
+      flex-direction: column;
+    }
+
+    .aboutImgSection{
+      width: 90%;
+      text-align: center;
+      margin: auto;
+      margin-top: 1rem;
+
+  }
+  
+    .aboutMeSection{
+      width: 90%;
+      text-align: center;
+      margin-right: 0;
+  }
+   .aboutImgSection img{
+    width: 30%;
+    height: auto;
+   }
+
+   .aboutMeSection .usingNowImg{
+    width: 100%;
+    margin-bottom: 1rem;
+    gap: 5px;
+  }
+
+  .aboutMeSection h2{
+    font-size: 2rem;
+  }
+  .aboutContactButton{
+    margin: 1rem 0;
+    width: 149px;
+    height: 36px;
+  }
+
+  .aboutMeSection p{
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+}
