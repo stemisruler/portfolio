@@ -4,7 +4,7 @@
 
 ## Available Scripts
 
-In the project directory, you can run:
+5개의 프로젝트
 
 ### `npm start`
 
